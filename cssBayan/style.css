@@ -1,12 +1,5 @@
 @import "reset.css";
 
-
-
-
-
-
-
-
 .header{
   margin: 0 auto;
   width: 100%;
@@ -42,7 +35,7 @@
   opacity: 1;
   transition: 0.7s ease all;
 }
-.container_common:hover .acc__title{
+.container_common:hover .acc__title h2{
   color: black;
 }
 .image{
@@ -53,12 +46,39 @@
   width: 480px;
   height: 360px;
 }
+.acc__img-1{
+  width: 1200px;
+}
+.acc__img-2{
+  width: 1200px;
+}
+.acc__img-3{
+  width: 1200px;
+}
+.acc__img-4{
+  width: 1200px;
+}
+.acc__img-5{
+  width: 1200px;
+}
 
 .acc__img-2 img, .acc__img-3 img, .acc__img-4 img, .acc__img-5 img{
   width: 0px;
   height: 0px;
 }
 
+.acc__item:active .acc__title h2{
+  color: blue;
+}
+.acc__item:active button{
+  opacity: 0.7;
+}
+.acc__item:active .acc__logo_krest img{
+  transform: rotate(90deg)
+}
+.acc__item:focus-within .acc__logo_krest img:active{
+  color: blue;
+}
 .acc__item:focus-within .acc__img-1 img{
   transition: 0.5s ease all;
   width: 480px;
@@ -134,6 +154,14 @@
   border-bottom: none;
 }
 
-.acc__title a:first-child{
+.acc__title h2{
+  color: blue;
+}
+.acc__title h2:hover{
   color: black;
 }
+.acc__title h2:active{
+  color: blue;
+}
+
+
