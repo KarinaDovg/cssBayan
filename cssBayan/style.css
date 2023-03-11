@@ -1,13 +1,18 @@
 @import "reset.css";
 
+
+
+
+
+
+
+
 .header{
-  position: relative;
   margin: 0 auto;
   width: 100%;
 }
 
 .container_common{
-  position: absolute;
   margin: 0 auto;
   max-width: 1230px;
   padding: 40px 20px;
@@ -20,22 +25,115 @@
   display: flex;
   justify-content: space-between;
   padding-top: 15px;
+  width: 1200px;
 }
-.acc__logo img{
+.acc__logo_plus img{
+  opacity: 0;
   width: 35px;
   height: 35px;
   padding-bottom: 5px;
 }
+.acc__logo_krest img {
+  width: 0px;
+  height: 0px;
+  opacity: 0;
+}
+.container_common:hover .acc__logo_plus img{
+  opacity: 1;
+  transition: 0.7s ease all;
+}
+.container_common:hover .acc__title{
+  color: black;
+}
+.image{
+  align-items: center;
+}
 
-.acc__img img{
+.acc__img-1 img{
   width: 480px;
   height: 360px;
 }
+
+.acc__img-2 img, .acc__img-3 img, .acc__img-4 img, .acc__img-5 img{
+  width: 0px;
+  height: 0px;
+}
+
+.acc__item:focus-within .acc__img-1 img{
+  transition: 0.5s ease all;
+  width: 480px;
+  height: 360px;
+}
+
+.acc__item:focus-within .acc__img-2 img{
+  transition: 0.5s ease all;
+  width: 480px;
+  height: 360px;
+}
+
+.acc__item:focus-within .acc__img-3 img{
+  transition: 0.5s ease all;
+  width: 480px;
+  height: 360px;
+}
+
+.acc__item:focus-within .acc__img-4 img{
+  transition: 0.5s ease all;
+  width: 480px;
+  height: 360px;
+}
+
+.acc__item:focus-within .acc__img-5 img{
+  transition: 0.5s ease all;
+  width: 480px;
+  height: 360px;
+}
+
+.acc__item:hover .acc__img-2 img{
+  transition: 0.5s ease all;
+  width: 480px;
+  height: 360px;
+}
+.acc__item:hover .acc__img-3 img{
+  transition: 0.5s ease all;
+  width: 480px;
+  height: 360px;
+}
+.acc__item:hover .acc__img-4 img{
+  transition: 0.5s ease all;
+  width: 480px;
+  height: 360px;
+}
+.acc__item:hover .acc__img-5 img{
+  transition: 0.5s ease all;
+  width: 480px;
+  height: 360px;
+}
+.acc__item:hover .acc__logo_plus{
+  width: 0px;
+  height: 0px;
+  opacity: 0;
+}
+.acc__item:hover .acc__logo_krest img{
+  width: 37px;
+  height: 37px;
+  opacity: 1;
+  transition: 0.5s ease all;
+}
+
+
 .acc__item{
   padding-bottom: 15px;
   cursor: pointer;
   border-bottom: 1px solid grey;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .acc__item:last-child{
   border-bottom: none;
+}
+
+.acc__title a:first-child{
+  color: black;
 }
