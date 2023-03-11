@@ -1,1 +1,41 @@
 @import "reset.css";
+
+.header{
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.container_common{
+  position: absolute;
+  margin: 0 auto;
+  max-width: 1230px;
+  padding: 40px 20px;
+}
+.title{
+  border-bottom: 1px solid grey;
+  padding-bottom: 15px;
+}
+.title_logo{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+.acc__logo img{
+  width: 35px;
+  height: 35px;
+  padding-bottom: 5px;
+}
+
+.acc__img img{
+  width: 480px;
+  height: 360px;
+}
+.acc__item{
+  padding-bottom: 15px;
+  cursor: pointer;
+  border-bottom: 1px solid grey;
+}
+.acc__item:last-child{
+  border-bottom: none;
+}
