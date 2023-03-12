@@ -39,6 +39,7 @@
 .acc__img-1 img{
   width: 0rem;
   height: 0rem;
+  transition: 0.5s ease all;
 }
 .acc__img-1{
   width: 75rem;
@@ -59,6 +60,7 @@
 .acc__img-2 img, .acc__img-3 img, .acc__img-4 img, .acc__img-5 img{
   width: 0rem;
   height: 0rem;
+  transition: 0.5s ease all;
 }
 
 .acc__item:active button{
@@ -97,11 +99,11 @@
   height: 22.5rem;
 }
 
-.acc__item:active .acc__title h2{
+.acc__item:active .title_logo .acc__title h2{
   color: blue;
 }
 
-.acc__item:focus-within .acc__title h2{
+.acc__item:focus-within .acc__title{
   color: black;
 }
 .acc__item{
@@ -116,16 +118,14 @@
   border-bottom: none;
 }
 
-.acc__title h2{
+.acc__title{
   color: blue;
 }
 .container_common:focus-within .acc__logo_plus img{
   opacity: 1;
   transition: 0.7s ease all;
 }
-.container_common:focus-within .acc__title h2{
-  color: black;
-}
+
 .acc__item:focus-within .acc__img-1 img{
   transition: 0.5s ease all;
   width: 30rem;
@@ -416,6 +416,41 @@
       opacity: 1;
       transition: 0.5s ease all;
     }
+    .acc__item:hover .acc__img-1 img{
+      transition: 0.5s ease all;
+      width: 25.625rem;
+      height: 20rem;
+    }
+    
+    .acc__item:hover .acc__img-2 img{
+      transition: 0.5s ease all;
+      width: 25.625rem;
+      height: 20rem;
+    }
+    
+    .acc__item:hover .acc__img-3 img{
+      transition: 0.5s ease all;
+      width: 25.625rem;
+      height: 20rem;
+    }
+    
+    .acc__item:hover .acc__img-4 img{
+      transition: 0.5s ease all;
+      width: 25.625rem;
+      height: 20rem;
+    }
+    
+    .acc__item:hover .acc__img-5 img{
+      transition: 0.5s ease all;
+      width: 25.625rem;
+      height: 20rem;
+    }
+    .acc__item:hover .acc__logo_krest img{
+      width: 2.125rem;
+      height: 2.125rem;
+      opacity: 1;
+      transition: 0.5s ease all;
+    }
   }
 }
 @media(max-width:46.875rem){
@@ -500,6 +535,40 @@
     width: 21.875rem;
     height: 16.875rem;
   }
+
+
+  @media (hover: hover) {
+    .acc__item:hover .acc__img-1 img{
+      transition: 0.5s ease all;
+      width: 21.875rem;
+      height: 16.875rem;
+    }
+    
+    .acc__item:hover .acc__img-2 img{
+      transition: 0.5s ease all;
+      width: 21.875rem;
+      height: 16.875rem;
+    }
+    
+    .acc__item:hover .acc__img-3 img{
+      transition: 0.5s ease all;
+      width: 21.875rem;
+      height: 16.875rem;
+    }
+    
+    .acc__item:hover .acc__img-4 img{
+      transition: 0.5s ease all;
+      width: 21.875rem;
+      height: 16.875rem;
+    }
+    
+    .acc__item:hover .acc__img-5 img{
+      transition: 0.5s ease all;
+      width: 21.875rem;
+      height: 16.875rem;
+    }
+  }
+
 }
 @media(max-width:35.625rem){
   .title_logo{
@@ -612,10 +681,80 @@
       opacity: 1;
       transition: 0.5s ease all;
     }
+
+    .acc__item:hover .acc__img-1 img{
+      transition: 0.5s ease all;
+      width: 16.25rem;
+      height: 12.5rem;
+    }
+    
+    .acc__item:hover .acc__img-2 img{
+      transition: 0.5s ease all;
+      width: 16.25rem;
+      height: 12.5rem;
+    }
+    
+    .acc__item:hover .acc__img-3 img{
+      transition: 0.5s ease all;
+      width: 16.25rem;
+      height: 12.5rem;
+    }
+    
+    .acc__item:hover .acc__img-4 img{
+      transition: 0.5s ease all;
+      width: 16.25rem;
+      height: 12.5rem;
+    }
+    
+    .acc__item:hover .acc__img-5 img{
+      transition: 0.5s ease all;
+      width: 16.25rem;
+      height: 12.5rem;
+    }
+    .acc__item:hover .acc__logo_krest img{
+      width: 1.75rem;
+      height: 1.75rem;
+      opacity: 1;
+      transition: 0.5s ease all;
+    }
+
   }
 
 }
 @media(max-width:27.5rem){
+
+
+  @media (hover: hover) {
+    .acc__item:hover .acc__img-1 img{
+      transition: 0.5s ease all;
+      width: 12.5rem;
+      height: 9.375rem;
+    }
+    
+    .acc__item:hover .acc__img-2 img{
+      transition: 0.5s ease all;
+      width: 12.5rem;
+      height: 9.375rem;
+    }
+    
+    .acc__item:hover .acc__img-3 img{
+      transition: 0.5s ease all;
+      width: 12.5rem;
+      height: 9.375rem;
+    }
+    
+    .acc__item:hover .acc__img-4 img{
+      transition: 0.5s ease all;
+      width: 12.5rem;
+      height: 9.375rem;
+    }
+    
+    .acc__item:hover .acc__img-5 img{
+      transition: 0.5s ease all;
+      width: 12.5rem;
+      height: 9.375rem;
+    }
+  }
   .title_logo{
     width: 22.5rem;
   }
@@ -743,6 +882,37 @@
       height: 1.25rem;
       opacity: 1;
       transition: 0.5s ease all;
+    }
+
+
+    .acc__item:hover .acc__img-1 img{
+      transition: 0.5s ease all;
+      width: 9.375rem;
+      height: 6.875rem;
+    }
+    
+    .acc__item:hover .acc__img-2 img{
+      transition: 0.5s ease all;
+      width: 9.375rem;
+      height: 6.875rem;
+    }
+    
+    .acc__item:hover .acc__img-3 img{
+      transition: 0.5s ease all;
+      width: 9.375rem;
+      height: 6.875rem;
+    }
+    
+    .acc__item:hover .acc__img-4 img{
+      transition: 0.5s ease all;
+      width: 9.375rem;
+      height: 6.875rem;
+    }
+    
+    .acc__item:hover .acc__img-5 img{
+      transition: 0.5s ease all;
+      width: 9.375rem;
+      height: 6.875rem;
     }
   }
   .acc__item:focus-within .acc__logo_krest img{
